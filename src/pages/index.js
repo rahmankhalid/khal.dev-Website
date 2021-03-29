@@ -222,15 +222,15 @@ export default (() => {
 			<Hr width="100%" height="0px" margin="100px 0 0px 0" />
 		</Section>
 		<Section text-align="center" padding="50px 0 50px 0" sm-padding="40px 0" background="#000000">
-			<Text color="#ffffff" font="28px --fontFamily-googlePoppins">
+			<Text color="#ffffff" font="28px --fontFamily-googlePoppins" width="100%" text-align="left">
 				Recent Posts
 			</Text>
 			<Stack margin="0 0 0px 0">
 				{"    "}
-				<StackItem width="33.33%" display="flex">
-					<Components.BlogArticleBox>
+				<StackItem width="33.33%" display="flex" sm-width="100%">
+					<Components.BlogArticleBox sm-width="150%">
 						<Override slot="text1">
-							Why training 4x a week for 4 years changed my..
+							Why training 4x a week for 4 years..
 						</Override>
 						<Override slot="text">
 							13 March 2021
@@ -239,7 +239,7 @@ export default (() => {
 					</Components.BlogArticleBox>
 					{"        "}{"    "}
 				</StackItem>
-				<StackItem width="33.33%">
+				<StackItem width="33.33%" sm-width="100%">
 					<Components.BlogArticleBox>
 						<Override slot="text1">
 							Don’t get too comfortable
@@ -250,7 +250,7 @@ export default (() => {
 						<Override slot="image" src="https://images.unsplash.com/photo-1519172380095-d03587980a44?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000" />
 					</Components.BlogArticleBox>
 				</StackItem>
-				<StackItem width="33.33%" display="flex">
+				<StackItem width="33.33%" display="flex" sm-width="100%">
 					<Components.BlogArticleBox />
 					{"        "}{"    "}
 				</StackItem>
