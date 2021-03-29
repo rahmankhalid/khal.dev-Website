@@ -17,6 +17,11 @@
          alt="Create React App version" />
   </a>
   
+  <a href="https://github.com/rahmankhalid/khal.dev-Website/pulls">
+    <img src="https://badgen.net/github/prs/rahmankhalid/khal.dev-Website" alt="Pull Request Amount">
+  </a>
+  <img src="https://badgen.net/github/last-commit/rahmankhalid/khal.dev-Website" alt="Last commit date" />
+            
   <a href="./LICENSE">
     <img src="https://badgen.net/badge/license/MIT/blue"
          alt="License">
