@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Image, Hr } from "@quarkly/widgets";
+import { Theme, Link, Text, Image, Hr, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, Section, StackItem, Stack } from "@quarkly/components";
@@ -195,7 +195,7 @@ export default (() => {
 						as="h1"
 						margin="0px"
 						font="normal 500 90px/1.2 --fontFamily-googlePoppins"
-						md-font="--headline2"
+						md-font="normal 500 42px/1.2 --fontFamily-googlePoppins"
 						color="--light"
 						max-width="850px"
 						width="100%"
@@ -221,42 +221,220 @@ export default (() => {
 			</Stack>
 			<Hr width="100%" height="0px" margin="100px 0 0px 0" />
 		</Section>
-		<Section text-align="center" padding="50px 0 50px 0" sm-padding="40px 0" background="#000000">
+		<Section
+			text-align="center"
+			padding="50px 0 100px 0"
+			sm-padding="40px 0"
+			background="#000000"
+			quarkly-title="Recent Posts"
+		>
 			<Text color="#ffffff" font="28px --fontFamily-googlePoppins" width="100%" text-align="left">
 				Recent Posts
 			</Text>
 			<Stack margin="0 0 0px 0">
 				{"    "}
 				<StackItem width="33.33%" display="flex" sm-width="100%">
-					<Components.BlogArticleBox sm-width="150%">
-						<Override slot="text1">
-							Why training 4x a week for 4 years..
-						</Override>
-						<Override slot="text">
-							13 March 2021
-						</Override>
-						<Override slot="image" src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000" />
-					</Components.BlogArticleBox>
+					<Stack width="150%">
+						{"    "}
+						<StackItem width="100%" display="flex" height="250px">
+							<Image
+								width="100%"
+								height="100%"
+								display="inline-flex"
+								src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"
+								object-fit="cover"
+							/>
+							{"        "}{"    "}
+						</StackItem>
+						{"    "}
+						<StackItem width="100%" display="flex">
+							<Box width="100%" height="100%" margin="0px 0px 0px 0px">
+								<Text
+									height="20px"
+									font="--base"
+									color="#6c6c6c"
+									text-align="left"
+									margin="0px 0 0 0"
+								>
+									13 March 2021
+								</Text>
+								<Text font="normal 400 28px/1.5 --fontFamily-googlePoppins" color="#fff" text-align="left" margin="10px 0 0px 0">
+									Why training 4x a week for 4 years..
+								</Text>
+								<Link
+									href="https://khalid-rahman.medium.com/why-training-4x-a-week-for-4-years-changed-my-life-284097908c67"
+									margin="10px 0px 0px 0px"
+									padding="0px 0px 0px 0px"
+									display="flex"
+									color="#ffffff"
+									text-decoration-line="initial"
+									font="normal 300 1em --fontFamily-googlePoppins"
+									letter-spacing="0.6px"
+									target="_blank"
+								>
+									Read more
+								</Link>
+							</Box>
+							{"        "}{"    "}
+						</StackItem>
+					</Stack>
 					{"        "}{"    "}
 				</StackItem>
 				<StackItem width="33.33%" sm-width="100%">
-					<Components.BlogArticleBox>
-						<Override slot="text1">
-							Don’t get too comfortable
-						</Override>
-						<Override slot="text">
-							02 Dec 2020
-						</Override>
-						<Override slot="image" src="https://images.unsplash.com/photo-1519172380095-d03587980a44?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000" />
-					</Components.BlogArticleBox>
+					<Stack width="150%">
+						{"    "}
+						<StackItem width="100%" display="flex" height="250px">
+							<Image
+								width="100%"
+								height="100%"
+								display="inline-flex"
+								src="https://images.unsplash.com/photo-1519172380095-d03587980a44?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"
+								object-fit="cover"
+							/>
+							{"        "}{"    "}
+						</StackItem>
+						{"    "}
+						<StackItem width="100%" display="flex" margin="0px 0px 0px 0px">
+							<Box width="100%">
+								<Text
+									height="20px"
+									font="--base"
+									color="#6c6c6c"
+									text-align="left"
+									margin="0px 0px 0px 0px"
+								>
+									02 Dec 2020
+								</Text>
+								<Text font="normal 400 28px/1.5 --fontFamily-googlePoppins" color="#fff" text-align="left" margin="10px 0 0 0">
+									Don’t get too comfortable
+								</Text>
+								<Link
+									href="https://khalid-rahman.medium.com/why-training-4x-a-week-for-4-years-changed-my-life-284097908c67"
+									margin="10px 0px 0px 0px"
+									padding="0px 0px 0px 0px"
+									display="flex"
+									color="#ffffff"
+									text-decoration-line="initial"
+									font="normal 300 1em --fontFamily-googlePoppins"
+									letter-spacing="0.6px"
+									target="_blank"
+								>
+									Read more
+								</Link>
+							</Box>
+							{"        "}{"    "}
+						</StackItem>
+					</Stack>
 				</StackItem>
 				<StackItem width="33.33%" display="flex" sm-width="100%">
-					<Components.BlogArticleBox />
+					<Stack width="150%">
+						{"    "}
+						<StackItem width="100%" display="flex" height="250px">
+							<Image
+								width="100%"
+								height="100%"
+								display="inline-flex"
+								src="https://images.unsplash.com/photo-1542546068979-b6affb46ea8f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000"
+								object-fit="cover"
+							/>
+							{"        "}{"    "}
+						</StackItem>
+						{"    "}
+						<StackItem width="100%" display="flex">
+							<Box width="100%" margin="0px 0px 0px 0px">
+								<Text
+									height="20px"
+									font="--base"
+									color="#6c6c6c"
+									text-align="left"
+									margin="0px 0 0 0"
+								>
+									20 March 2020
+								</Text>
+								<Text font="normal 400 28px/1.5 --fontFamily-googlePoppins" color="#fff" text-align="left" margin="10px 0 0 0">
+									Hard work doesn’t always pay off — my life
+								</Text>
+								<Link
+									href="https://khalid-rahman.medium.com/hard-work-doesnt-always-pay-off-my-life-ae16e2b7c7d3"
+									margin="10px 0px 0px 0px"
+									padding="0px 0px 0px 0px"
+									display="flex"
+									color="#ffffff"
+									text-decoration-line="initial"
+									font="normal 300 1em --fontFamily-googlePoppins"
+									letter-spacing="0.6px"
+									target="_blank"
+								>
+									Read more
+								</Link>
+							</Box>
+							{"        "}{"    "}
+						</StackItem>
+					</Stack>
 					{"        "}{"    "}
 				</StackItem>
 				{"    "}
 			</Stack>
 			<Hr width="100%" height="0px" margin="100px 0 0px 0" />
+		</Section>
+		<Section padding="50px 0 50px 0" sm-padding="40px 0" quarkly-title="Foodly" background="#1f1c2b">
+			<Override slot="SectionContent" align-items="center" />
+			<Stack width="100%">
+				{"    "}
+				<StackItem width="80%" display="flex" height="100%">
+					<Box width="100%" height="100%" margin="0 100px 0 0px">
+						<Text color="rgba(128, 129, 145, 0.60)" font="300 14px/28px --fontFamily-googlePoppins" letter-spacing="1px">
+							2021 Project
+						</Text>
+						<Text color="#FFF" font="500 60px/75px --fontFamily-googlePoppins">
+							Foodly iOS App
+						</Text>
+						<Text color="#808191" font="300 30px/50px --fontFamily-googlePoppins" text-align="left" letter-spacing="0.6px">
+							A mobile app that uses the latest technologies in artificial intelligence and machine learning to learn, understand and recommend the best recipes. Completly bespoke and tailor made to find recipes from a collection of over 100,00 by a community from around the world.
+						</Text>
+					</Box>
+					{"        "}{"    "}
+				</StackItem>
+				{"    "}
+				<StackItem width="20%" display="flex" height="100%">
+					<Box width="100%" margin="80px 0px 0px 20px" height="56px">
+						<Text color="#FFF" font="400 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0 0 0px 0">
+							Version
+						</Text>
+						<Text color="#808191" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+							Swift 5
+						</Text>
+						<Text color="#FFF" font="400 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="40px 0 0px 0">
+							OS
+						</Text>
+						<Text color="#808191" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+							iPhone
+						</Text>
+						<Text color="#FFF" font="400 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="40px 0 0px 0">
+							Deliverables
+						</Text>
+						<Text color="#808191" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+							Feature Planning
+							<br />
+							iOS App Design
+							<br />
+							iOS App Development
+						</Text>
+					</Box>
+					{"        "}{"    "}
+				</StackItem>
+			</Stack>
+		</Section>
+		<Section padding="0px 0 100px 0" sm-padding="40px 0" quarkly-title="Foodly UI" background="#1f1c2b">
+			<Override slot="SectionContent" align-items="center" />
+			<Image
+				width="100%"
+				height="1000px"
+				margin="0px 0px 0px 0px"
+				padding="0px 0px 0px 0px"
+				src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Frame%201(1).png?v=2021-04-01T00:08:58.455Z"
+				object-fit="contain"
+			/>
 		</Section>
 		<Link
 			font={"--capture"}
