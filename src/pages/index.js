@@ -377,40 +377,64 @@ export default (() => {
 			</Stack>
 			<Hr width="100%" height="0px" margin="100px 0 0px 0" />
 		</Section>
-		<Section padding="50px 0 50px 0" sm-padding="40px 0" quarkly-title="Foodly" background="#1f1c2b">
+		<Section
+			padding="50px 0 50px 0"
+			sm-padding="40px 0"
+			quarkly-title="Foodly"
+			background="#1f1c2b"
+			sm-height="620px"
+		>
 			<Override slot="SectionContent" align-items="center" />
-			<Stack width="100%">
+			<Stack width="100%" sm-height="375px">
 				{"    "}
-				<StackItem width="80%" display="flex" height="100%">
-					<Box width="100%" height="100%" margin="0 100px 0 0px">
+				<StackItem width="80%" display="flex" height="100%" sm-width="100%">
+					<Box width="100%" height="100%" margin="0 100px 0 0px" sm-margin="0 0px 0 0px">
 						<Text color="rgba(128, 129, 145, 0.60)" font="300 14px/28px --fontFamily-googlePoppins" letter-spacing="1px">
 							2021 Project
 						</Text>
-						<Text color="#FFF" font="500 60px/75px --fontFamily-googlePoppins">
+						<Text color="#FFF" font="500 60px/75px --fontFamily-googlePoppins" sm-font="500 40px/45px --fontFamily-googlePoppins">
 							Foodly iOS App
 						</Text>
-						<Text color="#808191" font="300 30px/50px --fontFamily-googlePoppins" text-align="left" letter-spacing="0.6px">
+						<Text
+							color="#808191"
+							font="300 30px/50px --fontFamily-googlePoppins"
+							text-align="left"
+							letter-spacing="0.6px"
+							sm-font="300 16px/26px --fontFamily-googlePoppins"
+						>
 							A mobile app that uses the latest technologies in artificial intelligence and machine learning to learn, understand and recommend the best recipes. Completly bespoke and tailor made to find recipes from a collection of over 100,00 by a community from around the world.
 						</Text>
 					</Box>
 					{"        "}{"    "}
 				</StackItem>
 				{"    "}
-				<StackItem width="20%" display="flex" height="100%">
-					<Box width="100%" margin="80px 0px 0px 20px" height="56px">
+				<StackItem width="20%" display="flex" height="100%" sm-width="100%">
+					<Box width="100%" margin="80px 0px 0px 20px" height="56px" sm-margin="0px 0px 0px 0px">
 						<Text color="#FFF" font="400 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0 0 0px 0">
 							Version
 						</Text>
 						<Text color="#808191" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
 							Swift 5
 						</Text>
-						<Text color="#FFF" font="400 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="40px 0 0px 0">
+						<Text
+							color="#FFF"
+							font="400 16px/28px --fontFamily-googlePoppins"
+							letter-spacing="1px"
+							margin="40px 0 0px 0"
+							sm-margin="20px 0 0px 0"
+						>
 							OS
 						</Text>
 						<Text color="#808191" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
 							iPhone
 						</Text>
-						<Text color="#FFF" font="400 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="40px 0 0px 0">
+						<Text
+							color="#FFF"
+							font="400 16px/28px --fontFamily-googlePoppins"
+							letter-spacing="1px"
+							margin="40px 0 0px 0"
+							sm-margin="20px 0 0px 0"
+						>
 							Deliverables
 						</Text>
 						<Text color="#808191" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
@@ -425,7 +449,13 @@ export default (() => {
 				</StackItem>
 			</Stack>
 		</Section>
-		<Section padding="0px 0 100px 0" sm-padding="40px 0" quarkly-title="Foodly UI" background="#1f1c2b">
+		<Section
+			padding="0px 0 100px 0"
+			sm-padding="40px 0"
+			quarkly-title="Foodly UI"
+			background="#1f1c2b"
+			sm-height="300px"
+		>
 			<Override slot="SectionContent" align-items="center" />
 			<Image
 				width="100%"
