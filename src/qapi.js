@@ -24,6 +24,9 @@ export default {
 	"projectType": "create-react-app",
 	"site": {
 		"styles": {},
-		"seo": {}
+		"seo": {
+			"title": "khal.dev",
+			"description": "Mobile app developer, software designer & creative designer. "
+		}
 	}
 }

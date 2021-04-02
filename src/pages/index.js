@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Image, Hr, Strong } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Image, Hr } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Section, Override, StackItem, Stack } from "@quarkly/components";
@@ -9,9 +9,9 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
 		<Helmet>
 			<title>
-				Quarkly export
+				khal.dev
 			</title>
-			<meta name={"description"} content={"Web site created using quarkly.io"} />
+			<meta name={"description"} content={"Mobile app developer, software designer & creative designer. "} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Section
@@ -584,7 +584,7 @@ export default (() => {
 				<StackItem width="80%" display="flex" height="100%" sm-width="100%">
 					<Box width="100%" height="100%" margin="0 100px 0 0px" sm-margin="0 0px 0 0px">
 						<Text color="#A2AAAB" font="300 14px/28px --fontFamily-googlePoppins" letter-spacing="1px">
-							2021 Project
+							2020 - Present Project
 						</Text>
 						<Text color="#000" font="500 60px/75px --fontFamily-googlePoppins" sm-font="500 40px/45px --fontFamily-googlePoppins">
 							Holiday Swap
@@ -598,11 +598,7 @@ export default (() => {
 						>
 							An award-winning 
 home exchange platform that has been designed for travellers to securely 
-swap and host their homes across 185 countries for jus
-							<Strong>
-								t $1 per person, per night.
-							</Strong>
-							{" "}With their subscription plans, travellers can
+swap and host their homes across 185 countries for just $1 per person, per night. With their subscription plans, travellers can
                         save money and explore more.
 						</Text>
 					</Box>
@@ -639,9 +635,9 @@ swap and host their homes across 185 countries for jus
 							Deliverables
 						</Text>
 						<Text color="#A2AAAB" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
-							iOS App Rebuild
+							iOS App Rebuild & Maintenance
 							<br />
-							App Maintenance
+							Android Maintenance
 						</Text>
 					</Box>
 					{"        "}{"    "}
@@ -662,6 +658,94 @@ swap and host their homes across 185 countries for jus
 				margin="0px 0px 0px 0px"
 				padding="0px 0px 0px 0px"
 				src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Frame%201%20(1).png?v=2021-04-02T12:33:27.119Z"
+				object-fit="contain"
+			/>
+		</Section>
+		<Section
+			padding="50px 0 50px 0"
+			sm-padding="40px 0"
+			quarkly-title="Holiday Swap"
+			background="#eaeef6"
+			sm-height="620px"
+		>
+			<Override slot="SectionContent" align-items="center" />
+			<Stack width="100%" sm-height="375px">
+				{"    "}
+				<StackItem width="80%" display="flex" height="100%" sm-width="100%">
+					<Box width="100%" height="100%" margin="0 100px 0 0px" sm-margin="0 0px 0 0px">
+						<Text font="300 14px/28px --fontFamily-googlePoppins" letter-spacing="1px" color="#A2AAAB">
+							2017 Project
+						</Text>
+						<Text color="#000" font="500 60px/75px --fontFamily-googlePoppins" sm-font="500 40px/45px --fontFamily-googlePoppins">
+							Gemporia
+						</Text>
+						<Text
+							color="#797986"
+							font="300 30px/50px --fontFamily-googlePoppins"
+							text-align="left"
+							letter-spacing="0.6px"
+							sm-font="300 16px/26px --fontFamily-googlePoppins"
+						>
+							Sourceing gemstones across the globe, from the richest of Rubies and 
+most sumptuous of Sapphires to the brightest of Diamonds. The mobile app
+ allows users to watch the live auction, make purchases and discover new
+ jewellery.{" "}
+						</Text>
+					</Box>
+					{"        "}{"    "}
+				</StackItem>
+				{"    "}
+				<StackItem width="20%" display="flex" height="100%" sm-width="100%">
+					<Box width="100%" margin="80px 0px 0px 20px" height="56px" sm-margin="0px 0px 0px 0px">
+						<Text color="#000" font="400 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0 0 0px 0">
+							Version
+						</Text>
+						<Text color="#A2AAAB" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+							Swift 3
+						</Text>
+						<Text
+							color="#000"
+							font="400 16px/28px --fontFamily-googlePoppins"
+							letter-spacing="1px"
+							margin="40px 0 0px 0"
+							sm-margin="20px 0 0px 0"
+						>
+							OS
+						</Text>
+						<Text color="#A2AAAB" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+							iPhone
+						</Text>
+						<Text
+							color="#000"
+							font="400 16px/28px --fontFamily-googlePoppins"
+							letter-spacing="1px"
+							margin="40px 0 0px 0"
+							sm-margin="20px 0 0px 0"
+						>
+							Deliverables
+						</Text>
+						<Text color="#A2AAAB" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+							App MaintenanceMake 3 Apps to 1TV App Maintenance
+						</Text>
+					</Box>
+					{"        "}{"    "}
+				</StackItem>
+			</Stack>
+		</Section>
+		<Section
+			padding="0px 0 100px 0"
+			sm-padding="40px 0"
+			quarkly-title="HolidaySwapUI"
+			background="#eaeef6"
+			sm-height="300px"
+		>
+			<Override slot="SectionContent" align-items="center" />
+			<Image
+				width="100%"
+				height="1000px"
+				margin="0px 0px 0px 0px"
+				padding="0px 0px 0px 0px"
+				src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Frame%202%20(1).png?v=2021-04-02T18:02:52.592Z"
 				object-fit="contain"
 			/>
 		</Section>
