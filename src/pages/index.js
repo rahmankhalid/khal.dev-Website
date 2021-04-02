@@ -665,7 +665,7 @@ swap and host their homes across 185 countries for just $1 per person, per night
 			padding="50px 0 50px 0"
 			sm-padding="40px 0"
 			quarkly-title="Holiday Swap"
-			background="#eaeef6"
+			background="#e2e0e6"
 			sm-height="620px"
 		>
 			<Override slot="SectionContent" align-items="center" />
@@ -736,7 +736,7 @@ most sumptuous of Sapphires to the brightest of Diamonds. The mobile app
 			padding="0px 0 100px 0"
 			sm-padding="40px 0"
 			quarkly-title="HolidaySwapUI"
-			background="#eaeef6"
+			background="#e2e0e6"
 			sm-height="300px"
 		>
 			<Override slot="SectionContent" align-items="center" />
