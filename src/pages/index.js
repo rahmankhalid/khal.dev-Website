@@ -1,10 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Image, Hr, Box } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Image, Hr } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, Section, StackItem, Stack } from "@quarkly/components";
-import * as Components from "components";
+import { Section, Override, StackItem, Stack } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -22,12 +21,26 @@ export default (() => {
 			md-height="500px"
 			quarkly-title="Header"
 		>
-			<Components.MainNavigationTopBar>
-				<Override slot="menuOverride1" font="--lead">
-					Home
-				</Override>
-				<Override slot="menuOverride2" font="--lead" />
-			</Components.MainNavigationTopBar>
+			<Box
+				display="flex"
+				padding="12px 0"
+				justify-content="space-between"
+				align-items="center"
+				flex-direction="row"
+				md-flex-direction="column"
+				width="150px"
+			>
+				<Text
+					margin="0"
+					md-margin="0px 0 20px 0"
+					text-align="left"
+					font="--lead"
+					color="#FFF"
+					display="flex"
+				>
+					Khal.dev
+				</Text>
+			</Box>
 			<Text
 				display="inline"
 				font="normal 500 42px/1.2 --fontFamily-googlePoppins"
@@ -68,7 +81,7 @@ export default (() => {
 					sm-margin="0 0 0 0"
 				>
 					{"        "}
-					<Image height="100%" width="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Rectangle%20372(1).png?v=2021-03-29T03:56:52.433Z" padding="0 40px 0 40px" />
+					<Image height="100%" width="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Rectangle%20372.png?v=2021-04-02T03:29:19.834Z" padding="0 40px 0 40px" />
 					{"    "}
 				</StackItem>
 				{"    "}
@@ -96,6 +109,7 @@ export default (() => {
 							md-width="50%"
 							md-margin="10px 0 0 0"
 						>
+							<Image width="100%" height="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/novalets.png?v=2021-04-02T03:05:17.630Z" />
 							{"            "}
 						</StackItem>
 						{"    "}
@@ -110,6 +124,7 @@ export default (() => {
 							md-width="50%"
 							md-margin="10px 0 0 0"
 						>
+							<Image width="100%" height="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/jacobandjoe.png?v=2021-04-02T03:03:32.882Z" />
 							{"            "}
 						</StackItem>
 					</Stack>
@@ -135,7 +150,7 @@ export default (() => {
 							width="100%"
 							display="flex"
 							height="287.5px"
-							background="#f4f7f7"
+							background="#f2e3ff"
 							margin="0 0 10px 0"
 							sm-width="50%"
 							sm-margin="0px 0 0 0"
@@ -149,13 +164,14 @@ export default (() => {
 							width="100%"
 							display="flex"
 							height="287.5px"
-							background="#eae4d8"
+							background="#ffdbe6"
 							margin="10px 0 0 0"
 							sm-width="50%"
 							md-width="50%"
 							md-margin="10px 0 0 0"
 							sm-margin="0 0 0 0"
 						>
+							<Image width="100%" height="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/sagehaircare.png?v=2021-04-02T02:55:41.875Z" />
 							{"            "}
 						</StackItem>
 					</Stack>
