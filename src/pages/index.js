@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Image, Hr } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Image, Hr, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Section, Override, StackItem, Stack } from "@quarkly/components";
+import { Section, Override, StackItem, Stack, Formspree } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -190,7 +190,7 @@ export default (() => {
 					md-margin="30px 0 0 0"
 				>
 					{"        "}
-					<Image height="100%" width="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Rectangle%20372.png?v=2021-03-29T13:05:49.434Z" padding="0 40px 0 40px" />
+					<Image height="100%" width="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Rectangle%20372(1).png?v=2021-03-29T03:56:52.433Z" padding="0 40px 0 40px" />
 					{"    "}
 				</StackItem>
 			</Stack>
@@ -748,6 +748,48 @@ most sumptuous of Sapphires to the brightest of Diamonds. The mobile app
 				src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Frame%202%20(1).png?v=2021-04-02T18:02:52.592Z"
 				object-fit="contain"
 			/>
+		</Section>
+		<Section background="--color-dark" color="--dark" padding="64px 0">
+			<Stack>
+				<StackItem width="50%" lg-width="100%">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text font="normal 300 42px/1.2 --fontFamily-googlePoppins" max-width="500px" margin="10px 0 0 0" color="#ffffff">
+						Have a project in mind? Let's talk.
+					</Text>
+				</StackItem>
+				<StackItem width="50%" lg-width="100%">
+					<Formspree endpoint="https://formspree.io/f/xleaekga" color="#ffffff" font="100 1.2em --fontFamily-googlePoppins">
+						<Stack gap="16px">
+							<StackItem width="50%">
+								<Override slot="StackItemContent" flex-direction="column" />
+								<Text font="--base" margin="0 0 4px 0">
+									Name
+								</Text>
+								<Input max-width="400px" width="100%" name="name" />
+							</StackItem>
+							<StackItem width="50%">
+								<Override slot="StackItemContent" flex-direction="column" />
+								<Text font="--base" margin="0 0 4px 0">
+									Email
+								</Text>
+								<Input max-width="400px" width="100%" type="email" name="email" />
+							</StackItem>
+							<StackItem width="100%">
+								<Override slot="StackItemContent" flex-direction="column" />
+								<Text font="--base" margin="0 0 4px 0">
+									Message
+								</Text>
+								<Input as="textarea" rows="4" width="100%" name="message" />
+							</StackItem>
+							<StackItem width="100%">
+								<Button background="#ffffff" color="#000000">
+									Send
+								</Button>
+							</StackItem>
+						</Stack>
+					</Formspree>
+				</StackItem>
+			</Stack>
 		</Section>
 		<Link
 			font={"--capture"}
