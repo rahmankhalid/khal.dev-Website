@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Image, Hr, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Section, Hr, Image, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Section, Override, StackItem, Stack, Formspree } from "@quarkly/components";
+import { StackItem, Stack, Override, Formspree } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -56,144 +56,6 @@ export default (() => {
 				<br />
 				creative thinker.
 			</Text>
-		</Section>
-		<Section
-			background="--color-dark"
-			padding="64px 0"
-			color="#000000"
-			width="100%"
-			quarkly-title="Projects"
-		>
-			<Override slot="SectionContent" width="100%" />
-			<Stack margin="0 0 10px 0" width="100%">
-				{"    "}
-				<StackItem
-					width="68%"
-					display="flex"
-					background="#e4e6f1"
-					min-width="50%"
-					overflow-y="visible"
-					margin="0 0 0 0"
-					sm-width="100%"
-					sm-height="300px"
-					md-width="100%"
-					md-margin="0 0 20px 0"
-					sm-margin="0 0 0 0"
-				>
-					{"        "}
-					<Image height="100%" width="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Rectangle%20372.png?v=2021-04-02T03:29:19.834Z" padding="0 40px 0 40px" />
-					{"    "}
-				</StackItem>
-				{"    "}
-				<StackItem
-					width="29%"
-					display="flex"
-					min-width="30%"
-					margin="0 0 0 20px"
-					sm-width="100%"
-					sm-margin="20px 0 0 0"
-					md-width="100%"
-					md-margin="0 0 0 0"
-				>
-					{"        "}
-					<Stack width="120%">
-						{"    "}
-						<StackItem
-							width="100%"
-							display="flex"
-							height="287.5px"
-							background="#eae4d8"
-							margin="0 0 10px 0"
-							sm-width="50%"
-							sm-margin="0 0 0 0"
-							md-width="50%"
-							md-margin="10px 0 0 0"
-						>
-							<Image width="100%" height="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/novalets.png?v=2021-04-02T03:05:17.630Z" />
-							{"            "}
-						</StackItem>
-						{"    "}
-						<StackItem
-							width="100%"
-							display="flex"
-							height="287.5px"
-							background="#f4f7f7"
-							margin="10px 0 0 0"
-							sm-width="50%"
-							sm-margin="0px 0 0 0"
-							md-width="50%"
-							md-margin="10px 0 0 0"
-						>
-							<Image width="100%" height="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/jacobandjoe.png?v=2021-04-02T03:03:32.882Z" />
-							{"            "}
-						</StackItem>
-					</Stack>
-					{"    "}
-				</StackItem>
-			</Stack>
-			<Stack margin="10px 0 0 0" width="100%">
-				{"        "}
-				<StackItem
-					display="flex"
-					min-width="30%"
-					margin="0 20px 0 0"
-					width="29%"
-					sm-width="100%"
-					sm-margin="0 0px 0 0"
-					md-width="100%"
-					md-margin="0 0px 0 0"
-				>
-					{"        "}
-					<Stack width="120%">
-						{"        "}
-						<StackItem
-							width="100%"
-							display="flex"
-							height="287.5px"
-							background="#f2e3ff"
-							margin="0 0 10px 0"
-							sm-width="50%"
-							sm-margin="0px 0 0 0"
-							md-width="50%"
-							md-margin="10px 0 0 0"
-						>
-							<Image width="100%" height="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Rectangle%20373.png?v=2021-03-29T09:42:07.776Z" />
-							{"            "}
-						</StackItem>
-						<StackItem
-							width="100%"
-							display="flex"
-							height="287.5px"
-							background="#ffdbe6"
-							margin="10px 0 0 0"
-							sm-width="50%"
-							md-width="50%"
-							md-margin="10px 0 0 0"
-							sm-margin="0 0 0 0"
-						>
-							<Image width="100%" height="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/sagehaircare.png?v=2021-04-02T02:55:41.875Z" />
-							{"            "}
-						</StackItem>
-					</Stack>
-					{"    "}
-				</StackItem>
-				<StackItem
-					width="68%"
-					display="flex"
-					background="#e4e6f1"
-					min-width="50%"
-					overflow-y="visible"
-					margin="0 0 0 0"
-					sm-width="100%"
-					sm-margin="20px 0 0 0"
-					md-width="100%"
-					md-margin="30px 0 0 0"
-				>
-					{"        "}
-					<Image height="100%" width="100%" src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Rectangle%20372(1).png?v=2021-03-29T03:56:52.433Z" padding="0 40px 0 40px" />
-					{"    "}
-				</StackItem>
-			</Stack>
 		</Section>
 		<Section
 			padding="50px 0 50px 0"
