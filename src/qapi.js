@@ -1,13 +1,13 @@
 export default {
 	"pages": {
 		"root": {
-			"id": "root",
-			"pageUrl": "root",
-			"name": "root",
 			"children": [
 				"6061375bf11f97001e813da1",
 				"6061375bf11f97001e813d9f"
-			]
+			],
+			"id": "root",
+			"pageUrl": "root",
+			"name": "root"
 		},
 		"6061375bf11f97001e813d9f": {
 			"id": "6061375bf11f97001e813d9f",

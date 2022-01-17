@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Section, Hr, Image, Input, Button } from "@quarkly/widgets";
+import { Theme, Text, Box, Section, Hr, Image, Link, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { StackItem, Stack, Override, Formspree } from "@quarkly/components";
@@ -22,13 +22,13 @@ export default (() => {
 			quarkly-title="Header"
 		>
 			<Box
+				flex-direction="row"
+				md-flex-direction="column"
+				width="150px"
 				display="flex"
 				padding="12px 0"
 				justify-content="space-between"
 				align-items="center"
-				flex-direction="row"
-				md-flex-direction="column"
-				width="150px"
 			>
 				<Text
 					margin="0"
@@ -42,14 +42,14 @@ export default (() => {
 				</Text>
 			</Box>
 			<Text
+				color="#FFF"
+				position="relative"
+				sm-text-align="center"
 				display="inline"
 				font="normal 500 42px/1.2 --fontFamily-googlePoppins"
-				color="#FFF"
 				text-align="left"
-				position="relative"
 				top="50px"
 				bottom="50px"
-				sm-text-align="center"
 				md-text-align="center"
 			>
 				Mobile app developer, software designer &
@@ -58,14 +58,14 @@ export default (() => {
 			</Text>
 		</Section>
 		<Section
+			flex-direction="column"
+			quarkly-title="Text"
 			padding="50px 0 50px 0"
 			sm-padding="40px 0"
 			min-height="600px"
 			sm-min-height="auto"
 			background="--color-dark"
 			display="flex"
-			flex-direction="column"
-			quarkly-title="Text"
 		>
 			<Stack color="--grey" font="--base">
 				<StackItem width="50%" md-width="100%">
@@ -81,8 +81,8 @@ export default (() => {
 						I love to create something simple and clean
 					</Text>
 				</StackItem>
-				<StackItem width="50%" md-width="100%">
-					<Text margin="0px" color="#777777" font="normal normal 300 1.3em --fontFamily-googlePoppins" width="100%">
+				<StackItem md-width="100%" width="50%">
+					<Text width="100%" margin="0px" color="#777777" font="normal normal 300 1.3em --fontFamily-googlePoppins">
 						A mobile app developer based in the heart of Cardiff. I started my career as an Android developer back in 2016 where I landed my first part time job working for PT Pal Plus. Quickly falling in love with mobile apps, I built a workout tracker app with NFC.{" "}
 						<br />
 						<br />
@@ -100,11 +100,11 @@ export default (() => {
 			<Hr width="100%" height="0px" margin="100px 0 0px 0" />
 		</Section>
 		<Section
+			background="#000000"
+			quarkly-title="Recent Posts"
 			text-align="center"
 			padding="50px 0 100px 0"
 			sm-padding="40px 0"
-			background="#000000"
-			quarkly-title="Recent Posts"
 		>
 			<Text color="#ffffff" font="28px --fontFamily-googlePoppins" width="100%" text-align="left">
 				Recent Posts
@@ -114,7 +114,7 @@ export default (() => {
 				<StackItem width="33.33%" display="flex" sm-width="100%">
 					<Stack width="150%">
 						{"    "}
-						<StackItem width="100%" display="flex" height="250px">
+						<StackItem display="flex" height="250px" width="100%">
 							<Image
 								width="100%"
 								height="100%"
@@ -140,15 +140,15 @@ export default (() => {
 									Why training 4x a week for 4 years..
 								</Text>
 								<Link
+									display="flex"
+									letter-spacing="0.6px"
 									href="https://khalid-rahman.medium.com/why-training-4x-a-week-for-4-years-changed-my-life-284097908c67"
 									margin="10px 0px 0px 0px"
-									padding="0px 0px 0px 0px"
-									display="flex"
-									color="#ffffff"
 									text-decoration-line="initial"
 									font="normal 300 1em --fontFamily-googlePoppins"
-									letter-spacing="0.6px"
 									target="_blank"
+									padding="0px 0px 0px 0px"
+									color="#ffffff"
 								>
 									Read more
 								</Link>
@@ -163,11 +163,11 @@ export default (() => {
 						{"    "}
 						<StackItem width="100%" display="flex" height="250px">
 							<Image
-								width="100%"
-								height="100%"
 								display="inline-flex"
 								src="https://images.unsplash.com/photo-1519172380095-d03587980a44?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"
 								object-fit="cover"
+								width="100%"
+								height="100%"
 							/>
 							{"        "}{"    "}
 						</StackItem>
@@ -175,11 +175,11 @@ export default (() => {
 						<StackItem width="100%" display="flex" margin="0px 0px 0px 0px">
 							<Box width="100%">
 								<Text
+									text-align="left"
+									margin="0px 0px 0px 0px"
 									height="20px"
 									font="--base"
 									color="#6c6c6c"
-									text-align="left"
-									margin="0px 0px 0px 0px"
 								>
 									02 Dec 2020
 								</Text>
@@ -187,15 +187,15 @@ export default (() => {
 									Don’t get too comfortable
 								</Text>
 								<Link
-									href="https://khalid-rahman.medium.com/why-training-4x-a-week-for-4-years-changed-my-life-284097908c67"
-									margin="10px 0px 0px 0px"
 									padding="0px 0px 0px 0px"
-									display="flex"
 									color="#ffffff"
 									text-decoration-line="initial"
-									font="normal 300 1em --fontFamily-googlePoppins"
 									letter-spacing="0.6px"
 									target="_blank"
+									href="https://khalid-rahman.medium.com/why-training-4x-a-week-for-4-years-changed-my-life-284097908c67"
+									display="flex"
+									font="normal 300 1em --fontFamily-googlePoppins"
+									margin="10px 0px 0px 0px"
 								>
 									Read more
 								</Link>
@@ -209,11 +209,11 @@ export default (() => {
 						{"    "}
 						<StackItem width="100%" display="flex" height="250px">
 							<Image
-								width="100%"
 								height="100%"
 								display="inline-flex"
 								src="https://images.unsplash.com/photo-1542546068979-b6affb46ea8f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000"
 								object-fit="cover"
+								width="100%"
 							/>
 							{"        "}{"    "}
 						</StackItem>
@@ -237,9 +237,9 @@ export default (() => {
 									margin="10px 0px 0px 0px"
 									padding="0px 0px 0px 0px"
 									display="flex"
-									color="#ffffff"
 									text-decoration-line="initial"
 									font="normal 300 1em --fontFamily-googlePoppins"
+									color="#ffffff"
 									letter-spacing="0.6px"
 									target="_blank"
 								>
@@ -266,7 +266,7 @@ export default (() => {
 			<Stack width="100%" sm-height="375px">
 				{"    "}
 				<StackItem width="80%" display="flex" height="100%" sm-width="100%">
-					<Box width="100%" height="100%" margin="0 100px 0 0px" sm-margin="0 0px 0 0px">
+					<Box margin="0 100px 0 0px" sm-margin="0 0px 0 0px" width="100%" height="100%">
 						<Text color="rgba(128, 129, 145, 0.60)" font="300 14px/28px --fontFamily-googlePoppins" letter-spacing="1px">
 							2021 Project
 						</Text>
@@ -274,11 +274,11 @@ export default (() => {
 							Foodly iOS App
 						</Text>
 						<Text
+							sm-font="300 16px/26px --fontFamily-googlePoppins"
 							color="#808191"
 							font="300 30px/50px --fontFamily-googlePoppins"
 							text-align="left"
 							letter-spacing="0.6px"
-							sm-font="300 16px/26px --fontFamily-googlePoppins"
 						>
 							A mobile app that uses the latest technologies in artificial intelligence and machine learning to learn, understand and recommend the best recipes. Completly bespoke and tailor made to find recipes from a collection of over 100,00 by a community from around the world.
 						</Text>
@@ -287,11 +287,11 @@ export default (() => {
 				</StackItem>
 				{"    "}
 				<StackItem width="20%" display="flex" height="100%" sm-width="100%">
-					<Box width="100%" margin="80px 0px 0px 20px" height="56px" sm-margin="0px 0px 0px 0px">
+					<Box sm-margin="0px 0px 0px 0px" width="100%" margin="80px 0px 0px 20px" height="56px">
 						<Text color="#FFF" font="400 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0 0 0px 0">
 							Version
 						</Text>
-						<Text color="#808191" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+						<Text font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px" color="#808191">
 							Swift 5
 						</Text>
 						<Text
@@ -303,7 +303,7 @@ export default (() => {
 						>
 							OS
 						</Text>
-						<Text color="#808191" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+						<Text letter-spacing="1px" margin="0px 0px 0px 0px" color="#808191" font="300 16px/28px --fontFamily-googlePoppins">
 							iPhone
 						</Text>
 						<Text
@@ -315,7 +315,7 @@ export default (() => {
 						>
 							Deliverables
 						</Text>
-						<Text color="#808191" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+						<Text font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px" color="#808191">
 							Feature Planning
 							<br />
 							iOS App Design
@@ -336,30 +336,30 @@ export default (() => {
 		>
 			<Override slot="SectionContent" align-items="center" />
 			<Image
-				width="100%"
 				height="1000px"
 				margin="0px 0px 0px 0px"
 				padding="0px 0px 0px 0px"
 				src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Frame%201(1).png?v=2021-04-01T00:08:58.455Z"
 				object-fit="contain"
+				width="100%"
 			/>
 		</Section>
 		<Section
+			sm-height="620px"
 			padding="50px 0 50px 0"
 			sm-padding="40px 0"
 			quarkly-title="ShishaPal"
 			background="#dfe3ef"
-			sm-height="620px"
 		>
 			<Override slot="SectionContent" align-items="center" />
-			<Stack width="100%" sm-height="375px">
+			<Stack sm-height="375px" width="100%">
 				{"    "}
-				<StackItem width="80%" display="flex" height="100%" sm-width="100%">
+				<StackItem height="100%" sm-width="100%" width="80%" display="flex">
 					<Box width="100%" height="100%" margin="0 100px 0 0px" sm-margin="0 0px 0 0px">
 						<Text color="rgba(128, 129, 145, 0.60)" font="300 14px/28px --fontFamily-googlePoppins" letter-spacing="1px">
 							2021 Project
 						</Text>
-						<Text color="#000" font="500 60px/75px --fontFamily-googlePoppins" sm-font="500 40px/45px --fontFamily-googlePoppins">
+						<Text font="500 60px/75px --fontFamily-googlePoppins" sm-font="500 40px/45px --fontFamily-googlePoppins" color="#000">
 							Shisha Pal
 						</Text>
 						<Text
@@ -380,7 +380,7 @@ export default (() => {
 						<Text color="#000" font="400 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0 0 0px 0">
 							Version
 						</Text>
-						<Text color="#797986" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+						<Text margin="0px 0px 0px 0px" color="#797986" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px">
 							Swift 5
 						</Text>
 						<Text
@@ -443,20 +443,20 @@ export default (() => {
 			<Override slot="SectionContent" align-items="center" />
 			<Stack width="100%" sm-height="375px">
 				{"    "}
-				<StackItem width="80%" display="flex" height="100%" sm-width="100%">
-					<Box width="100%" height="100%" margin="0 100px 0 0px" sm-margin="0 0px 0 0px">
-						<Text color="#A2AAAB" font="300 14px/28px --fontFamily-googlePoppins" letter-spacing="1px">
+				<StackItem height="100%" sm-width="100%" width="80%" display="flex">
+					<Box sm-margin="0 0px 0 0px" width="100%" height="100%" margin="0 100px 0 0px">
+						<Text font="300 14px/28px --fontFamily-googlePoppins" letter-spacing="1px" color="#A2AAAB">
 							2020 - Present Project
 						</Text>
-						<Text color="#000" font="500 60px/75px --fontFamily-googlePoppins" sm-font="500 40px/45px --fontFamily-googlePoppins">
+						<Text sm-font="500 40px/45px --fontFamily-googlePoppins" color="#000" font="500 60px/75px --fontFamily-googlePoppins">
 							Holiday Swap
 						</Text>
 						<Text
-							color="#797986"
-							font="300 30px/50px --fontFamily-googlePoppins"
 							text-align="left"
 							letter-spacing="0.6px"
 							sm-font="300 16px/26px --fontFamily-googlePoppins"
+							color="#797986"
+							font="300 30px/50px --fontFamily-googlePoppins"
 						>
 							An award-winning 
 home exchange platform that has been designed for travellers to securely 
@@ -468,19 +468,19 @@ swap and host their homes across 185 countries for just $1 per person, per night
 				</StackItem>
 				{"    "}
 				<StackItem width="20%" display="flex" height="100%" sm-width="100%">
-					<Box width="100%" margin="80px 0px 0px 20px" height="56px" sm-margin="0px 0px 0px 0px">
+					<Box margin="80px 0px 0px 20px" height="56px" sm-margin="0px 0px 0px 0px" width="100%">
 						<Text color="#000" font="400 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0 0 0px 0">
 							Version
 						</Text>
-						<Text color="#A2AAAB" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+						<Text margin="0px 0px 0px 0px" color="#A2AAAB" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px">
 							Swift 5
 						</Text>
 						<Text
-							color="#000"
-							font="400 16px/28px --fontFamily-googlePoppins"
 							letter-spacing="1px"
 							margin="40px 0 0px 0"
 							sm-margin="20px 0 0px 0"
+							color="#000"
+							font="400 16px/28px --fontFamily-googlePoppins"
 						>
 							OS
 						</Text>
@@ -496,7 +496,7 @@ swap and host their homes across 185 countries for just $1 per person, per night
 						>
 							Deliverables
 						</Text>
-						<Text color="#A2AAAB" font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px">
+						<Text font="300 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0px 0px 0px 0px" color="#A2AAAB">
 							iOS App Rebuild & Maintenance
 							<br />
 							Android Maintenance
@@ -507,20 +507,20 @@ swap and host their homes across 185 countries for just $1 per person, per night
 			</Stack>
 		</Section>
 		<Section
-			padding="0px 0 100px 0"
-			sm-padding="40px 0"
 			quarkly-title="HolidaySwapUI"
 			background="#eaeef6"
 			sm-height="300px"
+			padding="0px 0 100px 0"
+			sm-padding="40px 0"
 		>
 			<Override slot="SectionContent" align-items="center" />
 			<Image
-				width="100%"
-				height="1000px"
 				margin="0px 0px 0px 0px"
 				padding="0px 0px 0px 0px"
 				src="https://uploads.quarkly.io/6061375bf11f97001e813d9c/images/Frame%201%20(1).png?v=2021-04-02T12:33:27.119Z"
 				object-fit="contain"
+				width="100%"
+				height="1000px"
 			/>
 		</Section>
 		<Section
@@ -542,11 +542,11 @@ swap and host their homes across 185 countries for just $1 per person, per night
 							Gemporia
 						</Text>
 						<Text
-							color="#797986"
 							font="300 30px/50px --fontFamily-googlePoppins"
 							text-align="left"
 							letter-spacing="0.6px"
 							sm-font="300 16px/26px --fontFamily-googlePoppins"
+							color="#797986"
 						>
 							Sourceing gemstones across the globe, from the richest of Rubies and 
 most sumptuous of Sapphires to the brightest of Diamonds. The mobile app
@@ -558,7 +558,7 @@ most sumptuous of Sapphires to the brightest of Diamonds. The mobile app
 				</StackItem>
 				{"    "}
 				<StackItem width="20%" display="flex" height="100%" sm-width="100%">
-					<Box width="100%" margin="80px 0px 0px 20px" height="56px" sm-margin="0px 0px 0px 0px">
+					<Box margin="80px 0px 0px 20px" height="56px" sm-margin="0px 0px 0px 0px" width="100%">
 						<Text color="#000" font="400 16px/28px --fontFamily-googlePoppins" letter-spacing="1px" margin="0 0 0px 0">
 							Version
 						</Text>
@@ -578,11 +578,11 @@ most sumptuous of Sapphires to the brightest of Diamonds. The mobile app
 							iPhone
 						</Text>
 						<Text
-							color="#000"
 							font="400 16px/28px --fontFamily-googlePoppins"
 							letter-spacing="1px"
 							margin="40px 0 0px 0"
 							sm-margin="20px 0 0px 0"
+							color="#000"
 						>
 							Deliverables
 						</Text>
@@ -595,11 +595,11 @@ most sumptuous of Sapphires to the brightest of Diamonds. The mobile app
 			</Stack>
 		</Section>
 		<Section
-			padding="0px 0 100px 0"
 			sm-padding="40px 0"
 			quarkly-title="HolidaySwapUI"
 			background="#e2e0e6"
 			sm-height="300px"
+			padding="0px 0 100px 0"
 		>
 			<Override slot="SectionContent" align-items="center" />
 			<Image
@@ -611,23 +611,23 @@ most sumptuous of Sapphires to the brightest of Diamonds. The mobile app
 				object-fit="contain"
 			/>
 		</Section>
-		<Section background="--color-dark" color="--dark" padding="64px 0">
+		<Section padding="64px 0" background="--color-dark" color="--dark">
 			<Stack>
 				<StackItem width="50%" lg-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
-					<Text font="normal 300 42px/1.2 --fontFamily-googlePoppins" max-width="500px" margin="10px 0 0 0" color="#ffffff">
+					<Text margin="10px 0 0 0" color="#ffffff" font="normal 300 42px/1.2 --fontFamily-googlePoppins" max-width="500px">
 						Have a project in mind? Let's talk.
 					</Text>
 				</StackItem>
 				<StackItem width="50%" lg-width="100%">
-					<Formspree endpoint="https://formspree.io/f/xleaekga" color="#ffffff" font="100 1.2em --fontFamily-googlePoppins">
+					<Formspree endpoint="xleaekga" color="#ffffff" font="100 1.2em --fontFamily-googlePoppins">
 						<Stack gap="16px">
 							<StackItem width="50%">
 								<Override slot="StackItemContent" flex-direction="column" />
 								<Text font="--base" margin="0 0 4px 0">
 									Name
 								</Text>
-								<Input max-width="400px" width="100%" name="name" />
+								<Input width="100%" name="name" max-width="400px" />
 							</StackItem>
 							<StackItem width="50%">
 								<Override slot="StackItemContent" flex-direction="column" />
@@ -641,7 +641,7 @@ most sumptuous of Sapphires to the brightest of Diamonds. The mobile app
 								<Text font="--base" margin="0 0 4px 0">
 									Message
 								</Text>
-								<Input as="textarea" rows="4" width="100%" name="message" />
+								<Input name="message" as="textarea" rows="4" width="100%" />
 							</StackItem>
 							<StackItem width="100%">
 								<Button background="#ffffff" color="#000000">
@@ -653,27 +653,5 @@ most sumptuous of Sapphires to the brightest of Diamonds. The mobile app
 				</StackItem>
 			</Stack>
 		</Section>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 	</Theme>;
 });

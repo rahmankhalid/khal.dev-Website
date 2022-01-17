@@ -33,6 +33,6 @@ class UniqueSitemap extends Sitemap {
 
 (
     new UniqueSitemap(router())
-        .build('https://khaldev.netlify.app')
+        .build('https://khal.dev')
         .save('./public/sitemap-index.xml')
 );

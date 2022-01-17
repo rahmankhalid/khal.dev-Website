@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://khaldev.netlify.app/sitemap-index.xml
+Sitemap: https://khal.dev/sitemap-index.xml
