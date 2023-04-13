@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Box, Section, Hr, Image, Link, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Section, Hr, Image, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { StackItem, Stack, Override, Formspree } from "@quarkly/components";
@@ -52,9 +52,7 @@ export default (() => {
 				bottom="50px"
 				md-text-align="center"
 			>
-				Mobile app developer, software designer &
-				<br />
-				creative thinker.
+				Mobile app developer with an eye for design.
 			</Text>
 		</Section>
 		<Section
@@ -78,22 +76,21 @@ export default (() => {
 						max-width="850px"
 						width="100%"
 					>
-						I love to create something simple and clean
+						Brief intro
 					</Text>
 				</StackItem>
 				<StackItem md-width="100%" width="50%">
 					<Text width="100%" margin="0px" color="#777777" font="normal normal 300 1.3em --fontFamily-googlePoppins">
-						A mobile app developer based in the heart of Cardiff. I started my career as an Android developer back in 2016 where I landed my first part time job working for PT Pal Plus. Quickly falling in love with mobile apps, I built a workout tracker app with NFC.{" "}
+						A mobile app developer thriving in the heart of Cardiff! My journey as an Android developer began in 2016 when I scored my first part-time role at PT Pal Plus. My passion for mobile apps ignited as I crafted a workout tracker app using NFC.
 						<br />
 						<br />
-						I got my first job in 2017 as a Android/iOS developer (with no experience in iOS) and quickly picked up how to write iOS apps and fell in love with Swift and Apple.{" "}
+						In 2017, I landed my first job as an Android/iOS developer, diving headfirst into the world of iOS despite having no prior experience. Swift and Apple stole my heart, and I was hooked!
 						<br />
 						<br />
-						I started my software agency in 2015 where I built websites, marketing material and basic logos for clients and worked with clients locally and internationally.{" "}
+						In 2015, I founded my own software agency, catering to clients globally. From website development to creating eye-catching marketing materials and logos, I've done it all.
 						<br />
 						<br />
-						I now work with startups building their mobile apps from scratch or maintaining them. I also help grow businesses with feature planning, marketing plans and all things business related.
-						<br />
+						Currently, I work closely with startups, bringing their mobile app visions to life from scratch or providing top-notch maintenance. I'm also a trusted advisor in business growth, helping with feature planning, marketing strategies, and all things business-related. Let's create together.
 					</Text>
 				</StackItem>
 			</Stack>
@@ -653,5 +650,27 @@ most sumptuous of Sapphires to the brightest of Diamonds. The mobile app
 				</StackItem>
 			</Stack>
 		</Section>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 	</Theme>;
 });
